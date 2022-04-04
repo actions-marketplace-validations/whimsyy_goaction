@@ -23,4 +23,4 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
 FROM gcr.io/distroless/static:latest
 WORKDIR /
 COPY --from=builder /workspace/tweeter .
-ENTRYPOINT ["/tweeter"]
+ENTRYPOINT ["/twitter"]
